@@ -1,0 +1,120 @@
+<!-- friend request frame-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            background-color: red;
+            justify-content: center;
+        }
+        #card{
+            height:400px;
+            width:300px;
+            background-color: aqua;
+        }
+
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        card img{
+            object-fit: cover;
+            object-position: center;
+            height:50%;
+            width:100% ;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+         #card h1{
+                font-size: 25px;
+                    margin:10px;
+        }
+            #card h5 {
+            font-size: 25px;
+            color:yellowgreen;
+        }
+        #card button{
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+            color: black;
+            font-weight:700;
+            padding:12px 20px;
+            border-radius:50px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #card #rt{
+            background-color:blueviolet;
+            color:black
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id='card'> 
+        <img src="shtrada.jpg" alt="shradha hapor" >
+        <h1>shradha kappor</h1>
+        <h5>stranger</h5>
+        <div  id="bt">
+        <!---.<button id="rt">remove</button>-->
+            <button id="af">add friend</button>
+        </div>
+    </div>
+    <script>
+
+       const ist= document.querySelector("h5")
+       const addf= document.querySelector("#af")
+       let check=0
+       addf.addEventListener("click",function(){
+        if (check==0){
+
+        
+        ist.innerHTML="friend"
+        ist.style.color="green"
+        check=1
+      }else{
+        ist.innerHTML="starngererr"
+        ist.style.color="pink"
+        check=0
+       }
+        
+      })
+      // const tr=document.querySelector("#rt")
+      
+      // tr.addEventListener("click",function(){
+        //ist.innerHTML="strangerr"
+       // ist.style.color="yellow"
+      // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

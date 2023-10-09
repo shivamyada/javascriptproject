@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #search-button{ background-color:green ;
+         color: wheat;
+         padding: auto;
+          border: none;
+          font-size: 25px;
+          cursor: pointer;
+          border-radius: 5px;
+                                   }
+      .search-result{ margin:0;
+         padding:0;
+          box-sizing: border-box;
+          font-family:"poppins",sans-serif}
+          h1{ text-align: center;
+          font-weight:bold;
+           font-size: 36px;
+         background-color:aqua}
+         body{
+            line-height: 1.6;
+         }
+         form{ display:flex;
+             justify-content:center;
+             align-items: center;
+             margin-bottom: 60px;
+         }
+          #search-input{ width:60%;
+             max-width: 400px;
+             box-shadow:0 0 6px ;
+              border-radius:5px;
+             font-size:18px;
+             color:gray}   
+        .search-results{
+                display: row;
+                justify-content:space-between;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                max-width: 1200px;
+                
+             }
+             .search-result{ margin-bottom: 60px;
+                 margin-bottom:60px;
+                 width: 30%;
+                 height: 100%;
+                 border-radius: 5px;
+                 box-shadow:  0 0 6px;
+                 overflow: hidden;
+
+            
+            }
+            .search-result img{
+                  width: 100%;
+                  height:100%;
+                  object-fit: cover;
+                  transition: opacity 0.2s  ease-in-out;
+            }
+
+            .search-result:hover img{
+                opacity: 0.8
+            
+            }
+            .search-result a{
+                font-size: 20px;
+                text-decoration: none;
+                color: gold;
+                padding: auto;
+                display: block;
+                text-transform: capitalize;
+
+
+
+            }
+           #show-more-button{
+            background-color: aqua;
+            font-size: 18px;
+            border:none;
+            padding: 10px 10px ;
+            font-display: block;
+            cursor: pointer;
+            text-align:center;
+            color: blue;
+            border-radius: 5px;
+            margin: 30px auto;
+           }
+
+
+
+    </style>
+</head>
+<body>
+    <h1> Image  Search App</h1>
+    <form  action="">
+        <input type="text" id="search-input" placeholder="search for image">
+         <button id="search-button">search</button>
+    </form>
+    <div class="search-results">
+    <div  class="search-result"><img src="hanumanji.jpg"    alt="hanuman ji"  >
+     <a href="https://www.google.com/search?q=shiva+photos&tbm=isch&ved=2ahUKEwi1ueCUnN6BAxUYT2wGHQHdBeEQ2-cCegQIABAA&oq=shiv&gs_lcp=CgNpbWcQARgAMgcIABCKBRBDMg0IABCKBRCxAxCDARBDMgoIABCKBRCxAxBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMggIABCABBCxAzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzoECCMQJzoHCCMQ6gIQJzoFCAAQgARQ1QpYlyZgvDxoAXAAeASAAYYCiAH7EZIBBTAuMS45mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=oU8eZfXkNpieseMPgbqXiA4&bih=585&biw=638&rlz=1C1CHBD_enIN1041IN1042#imgrc=2zBXUyNsSxjlFM" >lord of hanuman</a>
+    </div>
+    <div  class="search-result"><img src="hanumanji2.jpg"    alt="hanuman ji"  >
+        <a href="https://www.google.com/search?q=shiva+photos&tbm=isch&ved=2ahUKEwi1ueCUnN6BAxUYT2wGHQHdBeEQ2-cCegQIABAA&oq=shiv&gs_lcp=CgNpbWcQARgAMgcIABCKBRBDMg0IABCKBRCxAxCDARBDMgoIABCKBRCxAxBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMggIABCABBCxAzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzoECCMQJzoHCCMQ6gIQJzoFCAAQgARQ1QpYlyZgvDxoAXAAeASAAYYCiAH7EZIBBTAuMS45mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=oU8eZfXkNpieseMPgbqXiA4&bih=585&biw=638&rlz=1C1CHBD_enIN1041IN1042#imgrc=2zBXUyNsSxjlFM" >lord of hanuman</a>
+       </div>
+       <div  class="search-result"><img src="shiva.jpg"    alt="shiva"  >
+        <a href="https://www.google.com/search?q=shiva+photos&tbm=isch&ved=2ahUKEwi1ueCUnN6BAxUYT2wGHQHdBeEQ2-cCegQIABAA&oq=shiv&gs_lcp=CgNpbWcQARgAMgcIABCKBRBDMg0IABCKBRCxAxCDARBDMgoIABCKBRCxAxBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMggIABCABBCxAzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzoECCMQJzoHCCMQ6gIQJzoFCAAQgARQ1QpYlyZgvDxoAXAAeASAAYYCiAH7EZIBBTAuMS45mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=oU8eZfXkNpieseMPgbqXiA4&bih=585&biw=638&rlz=1C1CHBD_enIN1041IN1042#imgrc=2zBXUyNsSxjlFM" >lord of shiva</a>
+       </div>
+       </div>
+       <button id="show-more-button">show more</button>
+
+       <script>
+         const accesskey="ziw1W6bLiRQi72El82Fz7EDMxVCqQJ638vUCqbch0Js"
+         
+         const form1=document.querySelector("form")
+         const input1=document.getElementById("search-input")
+         const searchresult1=document.querySelector(".search-results")
+         const showmore1=document.getElementById("show-more-button")
+        
+         let inputdata1=""
+         let page=1;
+
+         async function searchimage(){
+            inputdata1=input1.value;
+            const url=`https://api.unsplash.{com/search/photo?page=${page}
+            $query=${inputdata1}$client_id=${accesskey} `      
+
+            const response=await fetch(url)
+            const data=await response.json()
+            const results=data.results
+
+            if( page==1){
+                searchresult1.innerHTML=""
+            }
+            results.map((result) =>{
+                const imagewraper=document.createElement("div")
+                imagewraper.classList.add("serach-result")
+                const image=doucment.createElement("img")
+                image.src=result.urls.small;
+                image.alt=result.alt_description;
+                const imagelink=document.createElement("a");
+                imagelink.href=result.links.html;
+                imagelink.target="_blank";
+                imagelink.textContent=result.alt_desciption;
+
+                imagewraper.appendChild(image);
+                imagewraper.appendChild(imagelink);
+                imagewraper.appendChild(imagewraper);
+
+            });
+
+            page++
+            if(page>1){
+                showmore1.style.display="block"
+            }
+        }  
+
+            form1.addEventListener("submit",(event)=>{
+                event.preventDefault()
+                page=1;
+
+              searchimage()
+            })
+        
+            showmore1.addEventListener("click",()=>{
+
+
+              searchimage()
+            })
+         
+
+
+
+
+         
+         
+       </script>
+</body>
+</html>
